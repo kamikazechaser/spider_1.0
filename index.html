@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <style>
+
+    canvas {
+        border:1px solid black;
+        background-color: #f1f1f1;
+    }
+
+    .column {
+        float: left;
+        padding: 10px;
+    }
+
+    .left {
+      width: 70%;
+    }
+
+    .right {
+      width: 20%;
+    }    
+
+  </style>
+
+<div class="row">
+  <div class="column left">
+    <canvas id="canvas" width= "800" height="600">
+  <img src="tank.png" id="tank">
+</canvas>
+  </div>
+  <div class="column right">
+    <p id="pos">Click to select angle</p>
+    <p id="cord"></p>
+    <p id="pO" style="color: green;"></p>
+    <p id="pT" style="color: purple;"></p>
+    <p id="turns"></p>
+    <button style="height:50px;width:200px"onclick="hardReset()">Initialize Game</button>
+    <br><br>
+    <h3>Instructions</h3>
+    <ol>
+        <li>Click on the "Initialize Game" button.</li>
+        <br>
+        <li>Click anywhwere on the canvas to set projectile angle, you may click multiple times.</li>
+        <br>
+        <li>Hit on spacebar to fire the projectile.</li>
+      </ol>
+  </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
